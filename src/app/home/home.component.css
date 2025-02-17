@@ -41,7 +41,7 @@
     justify-content: flex-start;
     width: 100%;
     height: fit-content;
-    animation: cooking 0.5s; /* Duration of flip animation */
+    animation: cooking 0.7s; /* Duration of flip animation */
   }
   
   @keyframes cooking {
@@ -68,7 +68,7 @@
     background: linear-gradient(to bottom, rgb(240, 170, 80), rgb(200, 106, 106));
     left: 10px;
     border-radius: 50%;
-    animation: flip 0.5s;
+    animation: flip 0.7s;
     z-index: 2;
   }
   
@@ -131,7 +131,7 @@
   }
   
   .flip-loader {
-    animation: flip-image 0.5s forwards;
+    animation: flip-image 0.7s forwards;
   }
   
 

@@ -17,6 +17,6 @@ export class HomeComponent {
       // After the flip animation ends, randomly choose between heads or tails
       this.pancakeImage = Math.random() < 0.5 ? 'url(./not-burned.png)' : 'url(./burned.png)';
       this.isFlipping = false; // End flip animation
-    }, 450); // Duration of the flip animation (1 second)
+    }, 690); // Duration of the flip animation (1 second)
   }
 }
