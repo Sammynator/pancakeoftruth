@@ -1,22 +1,10 @@
 <div class="main">
-    <h1>Pancake of Truth</h1>
-  <div class="loader" *ngIf="isFlipping">
-    <div class="panWrapper">
-      <div class="pan flip-loader">
-        <!-- Only show this when flipping -->
-        <div class="food"></div>
-        <div class="panBase"></div>
-        <div class="panHandle"></div>
-      </div>
-      <div class="panShadow"></div>
-    </div>
-  </div>
+  <h1>Pancake of Truth</h1>
 
-  <div
-    class="pancake"
-    *ngIf="!isFlipping"
-    [style.background-image]="pancakeImage"
-  ></div>
+  <app-flip-animation
+    [isFlipping]="isFlipping"
+    [pancakeImage]="pancakeImage"
+  ></app-flip-animation>
 
   <button id="flipPancake" (click)="flipPancake()">Flip</button>
 </div>
