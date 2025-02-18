@@ -1,7 +1,7 @@
+<!-- Only show this when flipping -->
 <div class="loader" *ngIf="isFlipping">
   <div class="panWrapper">
     <div class="pan flip-loader">
-      <!-- Only show this when flipping -->
       <div class="food"></div>
       <div class="panBase"></div>
       <div class="panHandle"></div>
@@ -9,9 +9,3 @@
     <div class="panShadow"></div>
   </div>
 </div>
-
-<div
-  class="pancake"
-  *ngIf="!isFlipping"
-  [style.background-image]="pancakeImage"
-></div>

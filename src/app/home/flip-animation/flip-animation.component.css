@@ -1,9 +1,11 @@
 .loader {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 250px;
     height: 250px;
+    background-color: #fff;
+    padding-bottom: 65px;
   }
   
   .panWrapper {
@@ -15,6 +17,7 @@
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
+    background-color: #fff;
   }
   
   .pan {
@@ -24,6 +27,7 @@
     width: 100%;
     height: fit-content;
     animation: cooking 0.7s; /* Duration of flip animation */
+    background-color: #fff;
   }
   
   @keyframes cooking {
@@ -47,7 +51,7 @@
     position: absolute;
     width: 40%;
     height: 6px;
-    background: linear-gradient(to bottom, rgb(240, 170, 80), rgb(200, 106, 106));
+    background: linear-gradient(to bottom, rgb(255, 167, 51), rgb(212, 178, 68));
     left: 10px;
     border-radius: 50%;
     animation: flip 0.7s;
@@ -72,7 +76,7 @@
     height: 22px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    background: linear-gradient(to top, rgb(207, 205, 205), rgb(242, 245, 245));
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(78, 78, 78));
   }
   
   .panHandle {
@@ -102,14 +106,6 @@
     100% {
       transform: scaleX(0.7);
     }
-  }
-  
-  .pancake {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    border-radius: 20%;
-    display: block;
   }
   
   .flip-loader {
